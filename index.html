@@ -4211,9 +4211,24 @@
                 </div>
             </div>
         </section>
+        <!-- Love Letter Section - Unlocks Feb 8 (Propose Day) -->
+        <div class="love-letter-section section-locked" data-unlock-day="8">
+            <span class="letter-decoration top-left">🌹</span>
+            <span class="letter-decoration top-right">💕</span>
+            <span class="letter-decoration bottom-left">💌</span>
+            <span class="letter-decoration bottom-right">✨</span>
+            <h2 class="letter-title">💌 A Letter For You 💌</h2>
+            <div class="letter-paper">
+                <div class="letter-content" id="love-letter-content">
+                    <span class="typewriter-text" id="typewriter-output"></span>
+                    <span class="typing-cursor">|</span>
+                </div>
+                <button class="replay-letter-btn" id="replay-letter" onclick="replayLetter()" style="display: none;">📝 Read Again</button>
+            </div>
+        </div>
 
-        <!-- Photo Slideshow - Unlocks Feb 8 (Propose Day) -->
-        <div class="slideshow-section scroll-animate section-locked" data-unlock-day="8">
+        <!-- Photo Slideshow - Unlocks Feb 9 (Chocolate Day) -->
+        <div class="slideshow-section scroll-animate section-locked" data-unlock-day="9">
             <h2 class="slideshow-title">🎬 Our Memory Reel 🎬</h2>
             <div class="slideshow-container">
                 <div class="slideshow-track" id="slideshow-track">
@@ -4270,21 +4285,7 @@
         </div>
         -->
 
-        <!-- Love Letter Section - Unlocks Feb 9 (Chocolate Day) -->
-        <div class="love-letter-section section-locked" data-unlock-day="9">
-            <span class="letter-decoration top-left">🌹</span>
-            <span class="letter-decoration top-right">💕</span>
-            <span class="letter-decoration bottom-left">💌</span>
-            <span class="letter-decoration bottom-right">✨</span>
-            <h2 class="letter-title">💌 A Letter For You 💌</h2>
-            <div class="letter-paper">
-                <div class="letter-content" id="love-letter-content">
-                    <span class="typewriter-text" id="typewriter-output"></span>
-                    <span class="typing-cursor">|</span>
-                </div>
-                <button class="replay-letter-btn" id="replay-letter" onclick="replayLetter()" style="display: none;">📝 Read Again</button>
-            </div>
-        </div>
+        
 
         <!-- Our Story Timeline - Unlocks Feb 10 (Teddy Day) -->
         <div class="timeline-section section-locked" data-unlock-day="10">
@@ -4817,7 +4818,7 @@
         // ==========================================
 
         const today =  new Date();
-        //const today =  new Date(year, 1, 17); // For testing, set to Feb 7, 2026
+        //const today =  new Date(year, 1, 8); // For testing, set to Feb 7, 2026
         const startDate = new Date(year, 1, 7); 
         
         const comingSoonDiv = document.getElementById('coming-soon');
@@ -6710,5 +6711,4 @@ Your Babu 💖 ♾️`;
 
     </script>
 </body>
-
 </html>
